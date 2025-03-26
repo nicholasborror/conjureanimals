@@ -10,6 +10,7 @@
             background-color: #f4f4f9;
             color: #333;
             padding: 20px;
+            position: relative;
         }
         h1 {
             text-align: center;
@@ -89,9 +90,22 @@
             display: flex;
             align-items: center;
         }
+        .github-link {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+        }
+        .github-link img {
+            width: 32px;
+            height: 32px;
+        }
     </style>
 </head>
 <body>
+
+    <a href="https://github.com/nicholasborror/conjureanimals" target="_blank" class="github-link">
+        <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub">
+    </a>
 
     <h1>Conjure Animals Tracker</h1>
     
@@ -254,12 +268,6 @@
             damageResult.dataset.critical = 'false'; // Reset critical marker
         }
 
-        function clearAllDamageResults() {
-            for (let i = 1; i <= 8; i++) {
-                clearDamageResult(i);
-            }
-        }
-
         function resetForm() {
             // Reset initial hit points
             document.getElementById('initial-hp').value = 10;
@@ -272,11 +280,8 @@
 
             // Reset animal-specific fields
             for (let i = 1; i <= 8; i++) {
-                // Reset checkboxes
                 document.getElementById(`advantage-${i}`).checked = false;
                 document.getElementById(`disadvantage-${i}`).checked = false;
-
-                // Reset attack and damage results
                 clearDamageResult(i);
                 const attackResult = document.getElementById(`attack-roll-${i}`);
                 attackResult.innerText = '';

@@ -1,6 +1,25 @@
-# conjureanimals
-Simple PHP/javascript to track the animal hit points and attack rolls when using the Conjure Animals spell from D&amp;D to prevent slowing down the game.  It handles setting the hitpoits for all animals simultaniously, rolling attacks for all animals (with advantage or disadvantage) simultaniously, and performing damage rolls for all animals simultaniously.  You can also add or subtract hitpoints and if the hitpoints get to 0, the animal will disappear from the list.  This was made for personal use so it may not fit your specific scenario, especially if your animals have multiple attacks.  ChatGPT AI was used to help create this project.
+# ConjureAnimals
 
-<br>Demo at https://conjureanimals.com<br>
+A simple PHP/JavaScript tool to streamline tracking for the **Conjure Animals** spell in D&D 5e.  
+Easily manage HP, attack rolls, and damage for multiple summoned creatures without slowing down gameplay.
 
-![Alt text](/screenshot.png?raw=true "Screenshot")
+## Features
+
+- Set HP for all animals simultaneously
+- Roll attacks (normal, advantage, or disadvantage) for all animals at once
+- Roll damage for all animals simultaneously
+- Add or subtract HP per creature
+- Automatically remove animals when HP reaches 0
+
+> ⚠️ Designed for personal use and optimized for simplicity.  
+> May not handle complex scenarios like multi-attack creatures.
+
+## Demo
+
+👉 [Live Demo](https://conjureanimals.com)
+
+![Screenshot](/screenshot.png?raw=true "Screenshot")
+
+## Credits
+
+Project assisted by ChatGPT AI.

@@ -18,21 +18,13 @@
     .notes p { font-style: italic; color: #555; }
     .notes a { color: #007bff; text-decoration: none; }
     .attack-result.advantage { font-weight: bold; color: green; }
-    .attack-result.disadvantage { font-weight: bold; color: red; }
+    .attack-result.disadvantage { font-weight: bold; color: orange; }
     .attack-result.critical { font-weight: bold; color: red; }
     .damage-result.critical { font-weight: bold; color: red; }
     .hp-controls button { margin: 0 4px; }
-    .github-link { position: absolute; top: 10px; right: 10px; z-index: 1000; }
-    .github-link img { width: 24px; height: 24px; opacity: 0.6; transition: opacity 0.2s ease; }
-    .github-link img:hover {opacity: 1; }
   </style>
 </head>
 <body>
-    
-    <a href="https://github.com/nicholasborror/conjureanimals" target="_blank" class="github-link">
-    <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub" width="24" height="24">
-    </a>
-    
   <h1>Conjure Animals Tracker</h1>
 
   <div class="settings">
@@ -89,7 +81,8 @@
       list.sort((a,b) => a.name.localeCompare(b.name));
       animalSelect.innerHTML = '';
       list.forEach(b => {
-        const o = document.createElement('option'); o.value = b.name; o.textContent = b.name;
+        const o = document.createElement('option');
+        o.value = b.name; o.textContent = b.name;
         animalSelect.appendChild(o);
       });
       animalSelect.disabled = list.length === 0;
@@ -125,8 +118,10 @@
           const div = document.createElement('div');
           div.innerHTML = `
             <p><strong>${atk.name}.</strong> +${atk.bonus} to hit, ${atk.damage} ${atk.description}</p>
-            <label><input type="checkbox" id="adv-${i}-${a}">Adv</label>
-            <label><input type="checkbox" id="dis-${i}-${a}">Dis</label>
+            <label><input type="checkbox" id="adv-${i}-${a}"
+              onchange="if(this.checked)document.getElementById('dis-${i}-${a}').checked=false;">Adv</label>
+            <label><input type="checkbox" id="dis-${i}-${a}"
+              onchange="if(this.checked)document.getElementById('adv-${i}-${a}').checked=false;">Dis</label>
             <button onclick="rollAttack(${i},${a},${atk.bonus})">Attack</button>
             <span id="atk-roll-${i}-${a}" class="attack-result"></span>
             <button onclick="rollDamage(${i},${a},'${atk.damage}')">Damage</button>
@@ -148,7 +143,7 @@
       val = Math.max(0, val + delta);
       span.textContent = val;
       const box = document.getElementById(`animal-${index}`);
-      if (val === 0) box.classList.add('dead'); else box.classList.remove('dead');
+      box.classList.toggle('dead', val === 0);
     }
 
     function rollAttack(n,a,bonus=0) {
@@ -158,14 +153,14 @@
       let r2 = null, fin = r1;
       if (adv && !dis) { r2 = Math.floor(Math.random()*20)+1; fin = Math.max(r1,r2); }
       else if (!adv && dis) { r2 = Math.floor(Math.random()*20)+1; fin = Math.min(r1,r2); }
-      const crit = (r1 === 20 || r2 === 20);
+      const crit = (fin === 20);
       const total = fin + bonus;
       const span = document.getElementById(`atk-roll-${n}-${a}`);
       span.innerText = r2 !== null
         ? `Rolls: ${r1}, ${r2} → ${fin} +${bonus} = ${total}`
-        : `Roll: ${r1} +${bonus} = ${total}`;
+        : `Roll: ${fin} +${bonus} = ${total}`;
       span.className = `attack-result ${adv?'advantage':''} ${dis?'disadvantage':''} ${crit?'critical':''}`;
-      document.getElementById(`dmg-roll-${n}-${a}`).dataset.critical = crit ? 'true' : 'false';
+      document.getElementById(`dmg-roll-${n}-${a}`).dataset.critical = crit?'true':'false';
     }
 
     function rollDamage(n,a,dmg) {
@@ -180,10 +175,10 @@
       }
       total += add;
       const crit = document.getElementById(`dmg-roll-${n}-${a}`).dataset.critical === 'true';
-      const disp = crit ? total * 2 : total;
+      const disp = crit ? total*2 : total;
       const span = document.getElementById(`dmg-roll-${n}-${a}`);
       span.innerText = `Damage: ${disp} [${rolls.join(', ')}${add?` +${add}`:''}]${crit?' (CRIT!)':''}`;
-      span.className = crit ? 'damage-result critical' : 'damage-result';
+      span.className = crit?'damage-result critical':'damage-result';
     }
 
     function resetForm() {

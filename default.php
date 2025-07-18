@@ -22,9 +22,16 @@
     .attack-result.critical { font-weight: bold; color: red; }
     .damage-result.critical { font-weight: bold; color: red; }
     .hp-controls button { margin: 0 4px; }
+    .github-link { position: absolute; top: 10px; right: 10px; z-index: 1000; }
+    .github-link img { width: 24px; height: 24px; opacity: 0.6; transition: opacity 0.2s ease; }
+    .github-link img:hover {opacity: 1; }
   </style>
 </head>
 <body>
+        <a href="https://github.com/nicholasborror/conjureanimals" target="_blank" class="github-link">
+        <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub" width="24" height="24">
+        </a>
+        
   <h1>Conjure Animals Tracker</h1>
 
   <div class="settings">

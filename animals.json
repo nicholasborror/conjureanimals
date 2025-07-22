@@ -77,7 +77,8 @@
     { "name": "Lizard", "ac": 10, "hp": 2, "speed": "30 ft., climb 30 ft.", "attacks": [ { "name": "Bite", "bonus": 0, "damage": "1d4", "description": "piercing" } ], "notes": "Source: https://www.dndbeyond.com/monsters/lizard" },
     { "name": "Octopus", "ac": 11, "hp": 3, "speed": "30 ft., swim 30 ft.", "attacks": [ { "name": "Tentacles", "bonus": 2, "damage": "1d6", "description": "bludgeoning" } ], "notes": "Source: https://www.dndbeyond.com/monsters/octopus" },
     { "name": "Owl", "ac": 11, "hp": 1, "speed": "5 ft., fly 60 ft.", "attacks": [ { "name": "Talons", "bonus": 0, "damage": "1d4", "description": "slashing" } ], "notes": "Source: https://www.dndbeyond.com/monsters/owl" },
-    { "name": "Quipper", "ac": 13, "hp": 1, "speed": "swim 40 ft.", "attacks": [ { "name": "Bite", "bonus": 4, "damage": "1d4+2", "description": "piercing" } ], "notes": "Source: https://www.dndbeyond.com/monsters/quipper" }
+    { "name": "Quipper", "ac": 13, "hp": 1, "speed": "swim 40 ft.", "attacks": [ { "name": "Bite", "bonus": 4, "damage": "1d4+2", "description": "piercing" } ], "notes": "Source: https://www.dndbeyond.com/monsters/quipper" },
+    { "name": "Stirge", "ac": 14, "hp": 2, "speed": "10 ft. fly 40 ft.", "attacks": [ { "name": "Blood Drain", "bonus": 5, "damage": "1d4+3", "description": "piercing, then blood loss per round" } ], "notes": "Source: https://www.dndbeyond.com/monsters/stirge" }
   ]
 }
 

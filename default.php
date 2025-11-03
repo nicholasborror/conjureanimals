@@ -205,5 +205,75 @@
       }
     }
   </script>
+  <br><br><br><br><br><br>
+<h1>Best Conjure Animals — Quick Notes</h1>
+*Has useful attacks/drop/grapple/poison/prone/shove against those requiring magical attacks, e.g. grapple requires using up their action to escape, prone give advantage to attacks against, etc.
+<h2>1 × CR 2</h2>
+<ul>
+  <li><strong>AC:</strong> G Elk (14)</li>
+  <li><strong>DMG &amp; ATK:</strong> Polar Bear 2+7, S Tooth 2+6</li>
+  <li><strong>Fastest:</strong> G Elk 60'</li>
+  <li><strong>*Grapple:</strong> G Constrictor</li>
+  <li><strong>HP:</strong> G Constrict (60), S Tooth (52)</li>
+  <li><strong>*Prone:</strong> Rhino 15@20', G Elk 14@20'</li>
+  <li><strong>Reach:</strong> G Elk (10), G Constric (10)</li>
+  <li><strong>*Shove:</strong> Rhino, Polar Bear</li>
+</ul>
+
+<h2>2 × CR 1</h2>
+<ul>
+  <li><strong>AC:</strong> D Worf (14), G Spider (14)</li>
+  <li><strong>Climb:</strong> G Spider</li>
+  <li><strong>Darkvision:</strong> Tiger, G Spider</li>
+  <li><strong>DMG &amp; ATK:</strong> B Bear, G Eagle, G Vulture</li>
+  <li><strong>*Drop:</strong> G Eagle+5, G Vulture+4 (pack adv)</li>
+  <li><strong>Fastest:</strong> G Eagle (80)</li>
+  <li><strong>*Grapple:</strong> Giant Octopus, Giant Toad</li>
+  <li><strong>HP:</strong> G Oct (52), Giant Toad (39)</li>
+  <li><strong>Jump:</strong> Lion (25)</li>
+  <li><strong>Pack:</strong> D Wolf, G Vulture</li>
+  <li><strong>*Poison:</strong> Giant Spider (+web), '</li>
+  <li><strong>*Prone:</strong> Dire Wolf '</li>
+  <li><strong>Range:</strong> G Spider (30' once)</li>
+  <li><strong>Reach:</strong> G Octopus (15)</li>
+  <li><strong>See Invisibility:</strong> G
+  <li><strong>*Shove:</strong> Brown Bear</li>
+  <li><strong>Stealth:</strong> Tiger</li>
+</ul>
+
+<h2>4 × CR 1/2</h2>
+<ul>
+  <li><strong>AC:</strong> all 11/12</li>
+  <li><strong>ATK &amp; DMG:</strong> Ape, B Bear</li>
+  <li><strong>Ranged:</strong> Ape</li>
+  <li><strong>*Grapple:</strong> Ape, Croc</li>
+  <li><strong>Fastest:</strong> Warhorse (60), Giant Wasp (50)</li>
+  <li><strong>HP:</strong> all ~19</li>
+  <li><strong>*Poison:</strong> Giant Wasp</li>
+  <li><strong>*Prone:</strong> Warhorse 14@20', Giant Goal 13@20'</li>
+  <li><strong>*Shove:</strong> Ape</li>
+  <li><strong>*Transport:</strong> Warhorse (13.6 miles/hr)</li>
+</ul>
+
+<h2>8 × CR 1/4</h2>
+<ul>
+  <li><strong>AC:</strong> F Snake (14), GP Snake (14)</li>
+  <li><strong>ATK:</strong> Badger 2+3</li>
+  <li><strong>Darkvision:</strong> GW Spider, G Lizard</li>
+  <li><strong>*Drainblood:</strong> Stirge</li>
+  <li><strong>DMG:</strong> Elk, D Horse, F Snake</li>
+  <li><strong>Fastest:</strong> R Horse (60), F Snake (60)</li>
+  <li><strong>Flyby:</strong> F Snake</li>
+  <li><strong>*Grapple:</strong> Const Snake, G Frog, Octo</li>
+  <li><strong>HP:</strong> G Bat (22), Draft Horse (19)</li>
+  <li><strong>Pack &amp; Prone:</strong> Wolf</li>
+  <li><strong>*Poison:</strong> Flying Snake, Giant PSnake, Giant Cent, Giant WSpider</li>
+  <li><strong>*Prone:</strong> Elk 13@20', Panther 12@20'</li>
+  <li><strong>See Invisibility:</strong> G Bat, G Cent, F Snake</li>
+  <li><strong>*Shove:</strong> Draft Horse</li>
+  <li><strong>Stealth:</strong> Panther, Wolf</li>
+  <li><strong>*Transport:</strong> Axe Beak (11 miles/hr)</li>
+</ul>
+
 </body>
 </html>

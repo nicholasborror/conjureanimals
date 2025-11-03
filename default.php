@@ -232,8 +232,8 @@
   <li><strong>HP:</strong> G Oct (52), Giant Toad (39)</li>
   <li><strong>Jump:</strong> Lion (25)</li>
   <li><strong>Pack:</strong> D Wolf, G Vulture</li>
-  <li><strong>*Poison:</strong> Giant Spider (+web), '</li>
-  <li><strong>*Prone:</strong> Dire Wolf '</li>
+  <li><strong>*Poison:</strong> Giant Spider (+web), </li>
+  <li><strong>*Prone:</strong> Dire Wolf </li>
   <li><strong>Range:</strong> G Spider (30' once)</li>
   <li><strong>Reach:</strong> G Octopus (15)</li>
   <li><strong>See Invisibility:</strong> G
